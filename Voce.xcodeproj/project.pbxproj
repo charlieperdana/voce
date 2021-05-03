@@ -16,6 +16,17 @@
 		557E75EE263BFC63005E15E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557E75EC263BFC63005E15E0 /* LaunchScreen.storyboard */; };
 		557E75F9263BFC63005E15E0 /* VoceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E75F8263BFC63005E15E0 /* VoceTests.swift */; };
 		557E7604263BFC63005E15E0 /* VoceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E7603263BFC63005E15E0 /* VoceUITests.swift */; };
+		557E764326406FC6005E15E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E764226406FC6005E15E0 /* HomeViewController.swift */; };
+		557E7648264071E9005E15E0 /* VocalizingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E7647264071E9005E15E0 /* VocalizingViewController.swift */; };
+		557E765C264073F0005E15E0 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E765B264073F0005E15E0 /* ReminderViewController.swift */; };
+		557E76692640741A005E15E0 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E76682640741A005E15E0 /* BreathingViewController.swift */; };
+		557E766E26407437005E15E0 /* WarmUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E766D26407437005E15E0 /* WarmUpViewController.swift */; };
+		557E76732640744B005E15E0 /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E76722640744B005E15E0 /* RecoveryViewController.swift */; };
+		557E767826407459005E15E0 /* CoolDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E767726407459005E15E0 /* CoolDownViewController.swift */; };
+		557E767E26407570005E15E0 /* AudioBreathingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E767D26407570005E15E0 /* AudioBreathingCell.swift */; };
+		557E7686264078CF005E15E0 /* itemAudioList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E7685264078CF005E15E0 /* itemAudioList.swift */; };
+		557E768D264084BF005E15E0 /* sample2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E768B264084BE005E15E0 /* sample2.mp3 */; };
+		557E768E264084BF005E15E0 /* sample1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E768C264084BF005E15E0 /* sample1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,17 @@
 		557E75FF263BFC63005E15E0 /* VoceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557E7603263BFC63005E15E0 /* VoceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoceUITests.swift; sourceTree = "<group>"; };
 		557E7605263BFC63005E15E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557E764226406FC6005E15E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		557E7647264071E9005E15E0 /* VocalizingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalizingViewController.swift; sourceTree = "<group>"; };
+		557E765B264073F0005E15E0 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		557E76682640741A005E15E0 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
+		557E766D26407437005E15E0 /* WarmUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpViewController.swift; sourceTree = "<group>"; };
+		557E76722640744B005E15E0 /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
+		557E767726407459005E15E0 /* CoolDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolDownViewController.swift; sourceTree = "<group>"; };
+		557E767D26407570005E15E0 /* AudioBreathingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBreathingCell.swift; sourceTree = "<group>"; };
+		557E7685264078CF005E15E0 /* itemAudioList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemAudioList.swift; sourceTree = "<group>"; };
+		557E768B264084BE005E15E0 /* sample2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample2.mp3; sourceTree = "<group>"; };
+		557E768C264084BF005E15E0 /* sample1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +123,12 @@
 		557E75DD263BFC61005E15E0 /* Voce */ = {
 			isa = PBXGroup;
 			children = (
+				557E768A26408337005E15E0 /* audio */,
+				557E763B264060D5005E15E0 /* controller */,
+				557E763A264060CF005E15E0 /* view */,
+				557E7639264060C7005E15E0 /* model */,
 				557E75DE263BFC61005E15E0 /* AppDelegate.swift */,
 				557E75E0263BFC61005E15E0 /* SceneDelegate.swift */,
-				557E75E2263BFC61005E15E0 /* ViewController.swift */,
-				557E75E4263BFC61005E15E0 /* Main.storyboard */,
 				557E75EA263BFC63005E15E0 /* Assets.xcassets */,
 				557E75EC263BFC63005E15E0 /* LaunchScreen.storyboard */,
 				557E75EF263BFC63005E15E0 /* Info.plist */,
@@ -129,6 +153,55 @@
 				557E7605263BFC63005E15E0 /* Info.plist */,
 			);
 			path = VoceUITests;
+			sourceTree = "<group>";
+		};
+		557E7639264060C7005E15E0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				557E7685264078CF005E15E0 /* itemAudioList.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		557E763A264060CF005E15E0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				557E75E4263BFC61005E15E0 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		557E763B264060D5005E15E0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				557E767C2640754D005E15E0 /* cell */,
+				557E75E2263BFC61005E15E0 /* ViewController.swift */,
+				557E764226406FC6005E15E0 /* HomeViewController.swift */,
+				557E7647264071E9005E15E0 /* VocalizingViewController.swift */,
+				557E765B264073F0005E15E0 /* ReminderViewController.swift */,
+				557E76682640741A005E15E0 /* BreathingViewController.swift */,
+				557E766D26407437005E15E0 /* WarmUpViewController.swift */,
+				557E76722640744B005E15E0 /* RecoveryViewController.swift */,
+				557E767726407459005E15E0 /* CoolDownViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		557E767C2640754D005E15E0 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				557E767D26407570005E15E0 /* AudioBreathingCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		557E768A26408337005E15E0 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				557E768C264084BF005E15E0 /* sample1.mp3 */,
+				557E768B264084BE005E15E0 /* sample2.mp3 */,
+			);
+			path = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				557E75EE263BFC63005E15E0 /* LaunchScreen.storyboard in Resources */,
+				557E768D264084BF005E15E0 /* sample2.mp3 in Resources */,
 				557E75EB263BFC63005E15E0 /* Assets.xcassets in Resources */,
+				557E768E264084BF005E15E0 /* sample1.mp3 in Resources */,
 				557E75E6263BFC61005E15E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +336,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557E7648264071E9005E15E0 /* VocalizingViewController.swift in Sources */,
+				557E7686264078CF005E15E0 /* itemAudioList.swift in Sources */,
+				557E767E26407570005E15E0 /* AudioBreathingCell.swift in Sources */,
 				557E75E3263BFC61005E15E0 /* ViewController.swift in Sources */,
+				557E765C264073F0005E15E0 /* ReminderViewController.swift in Sources */,
+				557E76692640741A005E15E0 /* BreathingViewController.swift in Sources */,
 				557E75DF263BFC61005E15E0 /* AppDelegate.swift in Sources */,
+				557E76732640744B005E15E0 /* RecoveryViewController.swift in Sources */,
+				557E764326406FC6005E15E0 /* HomeViewController.swift in Sources */,
 				557E75E9263BFC61005E15E0 /* Voce.xcdatamodeld in Sources */,
 				557E75E1263BFC61005E15E0 /* SceneDelegate.swift in Sources */,
+				557E766E26407437005E15E0 /* WarmUpViewController.swift in Sources */,
+				557E767826407459005E15E0 /* CoolDownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
