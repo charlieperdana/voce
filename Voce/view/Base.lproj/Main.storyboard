@@ -82,7 +82,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ufN-9v-8GO">
             <objects>
-                <tabBarController id="uFj-rN-M7d" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarVoce" id="uFj-rN-M7d" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="21m-No-fpT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -96,25 +96,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTB-Rf-fX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1751" y="-643"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="68e-5W-4AH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rp3-3Y-xku" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ah-ZZ-YVx">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.38431372549019605" green="0.87450980392156863" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="1oA-mn-fMt" kind="relationship" relationship="rootViewController" id="Lve-oG-0Vj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5g5-z4-S1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
         <!--HOME-->
         <scene sceneID="CgS-gM-xib">
@@ -163,12 +144,6 @@
                                                     <rect key="frame" x="20" y="32" width="38" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFs-gZ-Sci">
-                                                    <rect key="frame" x="328" y="32" width="19" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" red="0.019607843137254902" green="0.61568627450980395" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" image="play" catalog="system"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqr-gy-T4o">
                                                     <rect key="frame" x="82" y="38" width="238" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -180,6 +155,15 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294117647056" green="0.76470588235294112" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFs-gZ-Sci">
+                                                    <rect key="frame" x="328" y="38" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.019607843137254902" green="0.61568627450980395" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="voce-play"/>
+                                                    <connections>
+                                                        <action selector="btnPressed:" destination="5Z9-5S-ZYQ" eventType="touchUpInside" id="bXF-tg-KVj"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -232,12 +216,6 @@
                                                     <rect key="frame" x="20" y="32" width="38" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ7-RQ-2Id">
-                                                    <rect key="frame" x="328" y="32" width="19" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" red="0.019607843140000001" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" image="play" catalog="system"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuD-pG-XiR">
                                                     <rect key="frame" x="82" y="38" width="238" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -249,6 +227,15 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294119999996" green="0.76470588240000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ7-RQ-2Id">
+                                                    <rect key="frame" x="328" y="39" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.019607843140000001" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="voce-play"/>
+                                                    <connections>
+                                                        <action selector="playPressWarmup:" destination="AEk-Vj-Klb" eventType="touchUpInside" id="P8B-74-4SM"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -301,12 +288,6 @@
                                                     <rect key="frame" x="20" y="32" width="38" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrA-bz-HK9">
-                                                    <rect key="frame" x="328" y="32" width="19" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" red="0.019607843140000001" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" image="play" catalog="system"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTe-LU-ahv">
                                                     <rect key="frame" x="82" y="38" width="238" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -318,6 +299,15 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294119999996" green="0.76470588240000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrA-bz-HK9">
+                                                    <rect key="frame" x="328" y="39" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.019607843140000001" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="voce-play"/>
+                                                    <connections>
+                                                        <action selector="playPressRecovery:" destination="Hia-vq-Wf3" eventType="touchUpInside" id="LPF-qd-AxM"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -370,12 +360,6 @@
                                                     <rect key="frame" x="20" y="32" width="38" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEv-dn-Qf8">
-                                                    <rect key="frame" x="328" y="32" width="19" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" red="0.019607843140000001" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" image="play" catalog="system"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpd-5W-fvp">
                                                     <rect key="frame" x="82" y="38" width="238" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -387,6 +371,15 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294119999996" green="0.76470588240000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEv-dn-Qf8">
+                                                    <rect key="frame" x="328" y="39" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.019607843140000001" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="voce-play"/>
+                                                    <connections>
+                                                        <action selector="playPressCoolDown:" destination="XYO-Xa-fJt" eventType="touchUpInside" id="hPj-Pa-38v"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -418,7 +411,7 @@
         <!--VOCALIZING-->
         <scene sceneID="FJU-Cm-OiV">
             <objects>
-                <viewController id="Vd1-XQ-NdE" customClass="VocalizingViewController" customModule="Voce" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vocalizingPage" id="Vd1-XQ-NdE" customClass="VocalizingViewController" customModule="Voce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHI-Ac-U26">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,6 +473,45 @@
                     <view key="view" contentMode="scaleToFill" id="uEa-iy-vm6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday, 15 May " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxe-rx-Qqh">
+                                <rect key="frame" x="59" y="149" width="277" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.14509803921568626" green="0.66274509803921566" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.14509803921568626" green="0.66274509803921566" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 : 00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA9-5f-Vhb">
+                                <rect key="frame" x="97" y="192" width="212" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.14509803921568626" green="0.66274509803921566" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2K-RN-uMx">
+                                <rect key="frame" x="38" y="155" width="24.333333333333332" height="23.666666666666668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.88235294117647056" green="0.76470588235294112" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-6t-4IA">
+                                <rect key="frame" x="59" y="387" width="277" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Set Reminder">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setReminder:" destination="W2c-HQ-XEr" eventType="touchUpInside" id="ktV-4W-gCB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set Time" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcC-g3-aNo">
+                                <rect key="frame" x="16" y="238" width="358" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gLM-Zz-e7f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -488,10 +520,17 @@
                             <color key="tintColor" red="0.019607843137254902" green="0.61568627450980395" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dayDateLbl" destination="Qxe-rx-Qqh" id="8h6-T0-Rrt"/>
+                        <outlet property="infoBtn" destination="i2K-RN-uMx" id="wgA-rK-Hu7"/>
+                        <outlet property="inputDate" destination="tcC-g3-aNo" id="pvQ-kz-abI"/>
+                        <outlet property="reminderBtn" destination="gXN-6t-4IA" id="AI2-lt-mNJ"/>
+                        <outlet property="timeSetLbl" destination="VA9-5f-Vhb" id="h7e-2s-Za9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7V-nE-rOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675" y="857"/>
+            <point key="canvasLocation" x="2673.8461538461538" y="856.6350710900474"/>
         </scene>
         <!--ABOUT-->
         <scene sceneID="8fG-q3-JNk">
@@ -514,9 +553,6 @@
             <point key="canvasLocation" x="3389.8550724637685" y="115.84821428571428"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Lve-oG-0Vj"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Breathing" width="306" height="340"/>
         <image name="Cool Down" width="306" height="340"/>
@@ -527,8 +563,8 @@
         <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="menu1" width="670" height="418"/>
         <image name="menu2" width="682" height="400"/>
-        <image name="play" catalog="system" width="120" height="128"/>
         <image name="voce-logo" width="479" height="409"/>
+        <image name="voce-play" width="240" height="240"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -17,8 +17,8 @@ class BreathingViewController: UIViewController {
     var player: AVAudioPlayer?
     
     var item : [ListAudioModel] = [
-        ListAudioModel(item: "Diafragma", detailInfo: "Test", audio: "sample1"),
-        ListAudioModel(item: "Throat Exercise", detailInfo: "Test", audio: "sample2")
+        ListAudioModel(item: "Diafragma", detailInfo: "Test", audio: "diafragma"),
+        ListAudioModel(item: "Throat Exercise", detailInfo: "Test", audio: "Throatexercise")
     ]
     
     override func viewDidLoad() {
@@ -45,28 +45,37 @@ extension BreathingViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         cell = tableView.dequeueReusableCell(withIdentifier: "listAudioBreathingCell", for: indexPath) as! AudioBreathingCell
         
+        let cell2 = tableView.dequeueReusableCell(withIdentifier: "listAudioBreathingCell", for: indexPath) as! AudioBreathingCell
+        
         let items = item[indexPath.row]
         
-        cell.itemAudio.text = items.item
+    
+        cell2.itemAudio.text = items.item
+        cell2.onButtonClick = {
+            var index = indexPath
+            self.playAudio(audio: items.audio, playBtn: cell2.playBtn)
+            
+        }
         
-        cell.playBtn.addTarget(self, action: #selector(playAudio), for: .touchUpInside)
+        
+//        cell.playBtn.addTarget(self, action: #selector(playAudio), for: .touchUpInside)
         
         
-        return cell
+        return cell2
     }
     
-    @objc func playAudio(sender: UIButton!) {
-        print("play tapped")
+    func playAudio(audio: String, playBtn : UIButton) {
+//        print("play tapped")
         
-        let urlString = Bundle.main.path(forResource: "sample1", ofType: "mp3")
+        let urlString = Bundle.main.path(forResource: "\(audio)", ofType: "mp3")
         if let player = player, player.isPlaying{
             // stop playback
-            sender.setImage(UIImage(named: "voce-play.png"), for: .normal)
+            playBtn.setImage(UIImage(named: "voce-play.png"), for: .normal)
             player.stop()
         }
         else {
             // set up player and play
-            sender.setImage(UIImage(named: "voce-stop.png"), for: .normal)
+            playBtn.setImage(UIImage(named: "voce-stop.png"), for: .normal)
             
             do{
                 try AVAudioSession.sharedInstance().setMode(.default)

@@ -27,6 +27,13 @@
 		557E7686264078CF005E15E0 /* itemAudioList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E7685264078CF005E15E0 /* itemAudioList.swift */; };
 		557E768D264084BF005E15E0 /* sample2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E768B264084BE005E15E0 /* sample2.mp3 */; };
 		557E768E264084BF005E15E0 /* sample1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E768C264084BF005E15E0 /* sample1.mp3 */; };
+		557E769C2641BD28005E15E0 /* diafragma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E769B2641BD28005E15E0 /* diafragma.mp3 */; };
+		557E76A12641BD3A005E15E0 /* Throatexercise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E76A02641BD3A005E15E0 /* Throatexercise.mp3 */; };
+		557E76A82641BDD1005E15E0 /* mamama.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E76A52641BDD0005E15E0 /* mamama.mp3 */; };
+		557E76A92641BDD1005E15E0 /* lalala.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E76A62641BDD0005E15E0 /* lalala.mp3 */; };
+		557E76AA2641BDD1005E15E0 /* mamimola.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E76A72641BDD0005E15E0 /* mamimola.mp3 */; };
+		557E76AF2641BDE4005E15E0 /* humming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E76AE2641BDE4005E15E0 /* humming.mp3 */; };
+		557E76B42641BE5F005E15E0 /* whispering.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557E76B32641BE5F005E15E0 /* whispering.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +80,13 @@
 		557E7685264078CF005E15E0 /* itemAudioList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemAudioList.swift; sourceTree = "<group>"; };
 		557E768B264084BE005E15E0 /* sample2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample2.mp3; sourceTree = "<group>"; };
 		557E768C264084BF005E15E0 /* sample1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample1.mp3; sourceTree = "<group>"; };
+		557E769B2641BD28005E15E0 /* diafragma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = diafragma.mp3; sourceTree = "<group>"; };
+		557E76A02641BD3A005E15E0 /* Throatexercise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Throatexercise.mp3; sourceTree = "<group>"; };
+		557E76A52641BDD0005E15E0 /* mamama.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mamama.mp3; sourceTree = "<group>"; };
+		557E76A62641BDD0005E15E0 /* lalala.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lalala.mp3; sourceTree = "<group>"; };
+		557E76A72641BDD0005E15E0 /* mamimola.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mamimola.mp3; sourceTree = "<group>"; };
+		557E76AE2641BDE4005E15E0 /* humming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = humming.mp3; sourceTree = "<group>"; };
+		557E76B32641BE5F005E15E0 /* whispering.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whispering.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +212,13 @@
 		557E768A26408337005E15E0 /* audio */ = {
 			isa = PBXGroup;
 			children = (
+				557E76B32641BE5F005E15E0 /* whispering.mp3 */,
+				557E76AE2641BDE4005E15E0 /* humming.mp3 */,
+				557E76A62641BDD0005E15E0 /* lalala.mp3 */,
+				557E76A52641BDD0005E15E0 /* mamama.mp3 */,
+				557E76A72641BDD0005E15E0 /* mamimola.mp3 */,
+				557E76A02641BD3A005E15E0 /* Throatexercise.mp3 */,
+				557E769B2641BD28005E15E0 /* diafragma.mp3 */,
 				557E768C264084BF005E15E0 /* sample1.mp3 */,
 				557E768B264084BE005E15E0 /* sample2.mp3 */,
 			);
@@ -307,10 +328,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557E76B42641BE5F005E15E0 /* whispering.mp3 in Resources */,
 				557E75EE263BFC63005E15E0 /* LaunchScreen.storyboard in Resources */,
+				557E769C2641BD28005E15E0 /* diafragma.mp3 in Resources */,
+				557E76A82641BDD1005E15E0 /* mamama.mp3 in Resources */,
 				557E768D264084BF005E15E0 /* sample2.mp3 in Resources */,
+				557E76A92641BDD1005E15E0 /* lalala.mp3 in Resources */,
+				557E76AF2641BDE4005E15E0 /* humming.mp3 in Resources */,
+				557E76AA2641BDD1005E15E0 /* mamimola.mp3 in Resources */,
 				557E75EB263BFC63005E15E0 /* Assets.xcassets in Resources */,
 				557E768E264084BF005E15E0 /* sample1.mp3 in Resources */,
+				557E76A12641BD3A005E15E0 /* Throatexercise.mp3 in Resources */,
 				557E75E6263BFC61005E15E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
