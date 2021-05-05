@@ -10,5 +10,6 @@ import Foundation
 struct ListAudioModel {
     var item : String = ""
     var detailInfo : String = ""
+    var titleInfo : String = ""
     var audio : String = ""
 }
