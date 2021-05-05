@@ -16,7 +16,7 @@ class RecoveryViewController: UIViewController {
     var player: AVAudioPlayer?
     
     var item : [ListAudioModel] = [
-        ListAudioModel(item: "Humming", detailInfo: "Test", audio: "humming")
+        ListAudioModel(item: "Humming", detailInfo: "This technique helps stretch the vocal cords, relaxes your facial muscles, and improves breathing. Humming also develops your vocal resonance and tone quality. To practice this exercise: Relax your facial muscles and body.",titleInfo: "Humming Info", audio: "humming")
     ]
 
     override func viewDidLoad() {
@@ -48,6 +48,10 @@ extension RecoveryViewController : UITableViewDelegate, UITableViewDataSource{
         cell.onButtonClick = {
             self.playAudio(audio: items.audio, playBtn: cell.playBtn)
             
+        }
+        
+        cell.onInfoButtonClick = {
+            self.showInfoAudio(titleInfo: items.titleInfo, contentInfo: items.detailInfo, sender: cell.infoAudioBtn)
         }
         
 //        cell.playBtn.addTarget(self, action: #selector(playAudio), for: .touchUpInside)
@@ -91,7 +95,24 @@ extension RecoveryViewController : UITableViewDelegate, UITableViewDataSource{
 
     }
     
+    func showInfoAudio(titleInfo: String, contentInfo: String, sender: UIButton!) {
+        let slideInfo = OverlayView()
+        slideInfo.contentTitle = titleInfo
+        slideInfo.contentMessage = contentInfo
+        
+        slideInfo.modalPresentationStyle = .custom
+        slideInfo.transitioningDelegate = self
+        self.present(slideInfo, animated: true, completion: nil)
+
+    }
     
+    
+}
+
+extension RecoveryViewController : UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        PresentationController(presentedViewController: presented, presenting: presenting)
+    }
 }
 
 

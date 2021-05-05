@@ -101,7 +101,7 @@
         <scene sceneID="CgS-gM-xib">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1oA-mn-fMt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="HOME" id="850-NY-oYP">
+                    <tabBarItem key="tabBarItem" title="HOME" image="homekit" catalog="system" badgeValue="2" id="850-NY-oYP">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -155,6 +155,9 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294117647056" green="0.76470588235294112" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="inforPressBreath:" destination="5Z9-5S-ZYQ" eventType="touchUpInside" id="pkc-mN-s3j"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFs-gZ-Sci">
                                                     <rect key="frame" x="328" y="38" width="20" height="20"/>
@@ -227,6 +230,9 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294119999996" green="0.76470588240000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="inforPressWarmup:" destination="AEk-Vj-Klb" eventType="touchUpInside" id="37a-4e-13C"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ7-RQ-2Id">
                                                     <rect key="frame" x="328" y="39" width="20" height="20"/>
@@ -299,6 +305,9 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294119999996" green="0.76470588240000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="inforPressRecovery:" destination="Hia-vq-Wf3" eventType="touchUpInside" id="PGe-7j-QrF"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrA-bz-HK9">
                                                     <rect key="frame" x="328" y="39" width="20" height="20"/>
@@ -371,6 +380,9 @@
                                                     <rect key="frame" x="296" y="36" width="24.333333333333332" height="23.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.88235294119999996" green="0.76470588240000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="inforPressCoolDown:" destination="XYO-Xa-fJt" eventType="touchUpInside" id="Fiv-zw-1JN"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEv-dn-Qf8">
                                                     <rect key="frame" x="328" y="39" width="20" height="20"/>
@@ -492,6 +504,9 @@
                                 <rect key="frame" x="38" y="155" width="24.333333333333332" height="23.666666666666668"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.88235294117647056" green="0.76470588235294112" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="infoDidPressed:" destination="W2c-HQ-XEr" eventType="touchUpInside" id="rxD-vU-RsQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-6t-4IA">
                                 <rect key="frame" x="59" y="387" width="277" height="47"/>
@@ -536,7 +551,7 @@
         <scene sceneID="8fG-q3-JNk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="251-C0-rE2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ABOUT" id="y23-Fg-1rd"/>
+                    <tabBarItem key="tabBarItem" title="ABOUT" image="lightbulb" catalog="system" id="y23-Fg-1rd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yu1-hR-XBH">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -561,6 +576,8 @@
         <image name="audios" width="102" height="104"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="lightbulb" catalog="system" width="113" height="128"/>
         <image name="menu1" width="670" height="418"/>
         <image name="menu2" width="682" height="400"/>
         <image name="voce-logo" width="479" height="409"/>

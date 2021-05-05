@@ -21,6 +21,8 @@ class VocalizingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        startSimulationBtn.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
+        
         setupMenuAction()
 
     }
@@ -57,6 +59,22 @@ class VocalizingViewController: UIViewController {
     
     @objc func coolDownMenuTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         performSegue(withIdentifier: "toCoolDown", sender: self)
+    }
+    
+    @objc func showAlert(sender: UIButton!) {
+        // Create a UIAlertController object, you should provide title, alert message and dialog stype parameter.
+        let alertController:UIAlertController = UIAlertController(title: "Info", message: "This feature is under constructions", preferredStyle: UIAlertController.Style.alert)
+        
+        // Create a UIAlertAction object, this object will add a button at alert dialog bottom, the button text is OK, when click it just close the alert dialog.
+        let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil)
+        
+        // Add alertAction object to alertController.
+        alertController.addAction(alertAction)
+        
+        // Popup the alert dialog.
+        present(alertController, animated: true, completion: nil)
+        
+        
     }
     
 }

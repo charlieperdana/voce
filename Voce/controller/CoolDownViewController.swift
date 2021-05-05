@@ -15,7 +15,7 @@ class CoolDownViewController: UIViewController {
     var player: AVAudioPlayer?
     
     var item : [ListAudioModel] = [
-        ListAudioModel(item: "Whispering", detailInfo: "Test", audio: "whispering")
+        ListAudioModel(item: "Whispering", detailInfo: "Whisper tone is the voice that sounds like it's “riding on a cushion of air.” It's produced when the vocal folds are not together all the way and air escapes along with the tone. ... But other artists use the technique sporadically for dramatic effect, even if it's not their signature sound",titleInfo: "Whispering Info", audio: "whispering")
     ]
 
     override func viewDidLoad() {
@@ -45,6 +45,10 @@ extension CoolDownViewController : UITableViewDelegate, UITableViewDataSource {
         cell.onButtonClick = {
             self.playAudio(audio: items.audio, playBtn: cell.playBtn)
             
+        }
+        
+        cell.onInfoButtonClick = {
+            self.showInfoAudio(titleInfo: items.titleInfo, contentInfo: items.detailInfo, sender: cell.infoAudioBtn)
         }
         
 //        cell.playBtn.addTarget(self, action: #selector(playAudio), for: .touchUpInside)
@@ -87,5 +91,22 @@ extension CoolDownViewController : UITableViewDelegate, UITableViewDataSource {
             }
         }
 
+    }
+    
+    func showInfoAudio(titleInfo: String, contentInfo: String, sender: UIButton!) {
+        let slideInfo = OverlayView()
+        slideInfo.contentTitle = titleInfo
+        slideInfo.contentMessage = contentInfo
+        
+        slideInfo.modalPresentationStyle = .custom
+        slideInfo.transitioningDelegate = self
+        self.present(slideInfo, animated: true, completion: nil)
+
+    }
+}
+
+extension CoolDownViewController : UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        PresentationController(presentedViewController: presented, presenting: presenting)
     }
 }

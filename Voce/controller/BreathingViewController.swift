@@ -17,8 +17,8 @@ class BreathingViewController: UIViewController {
     var player: AVAudioPlayer?
     
     var item : [ListAudioModel] = [
-        ListAudioModel(item: "Diafragma", detailInfo: "Test", audio: "diafragma"),
-        ListAudioModel(item: "Throat Exercise", detailInfo: "Test", audio: "Throatexercise")
+        ListAudioModel(item: "Diafragma", detailInfo: "When try to train your breathing, you have to be focus on your diafragma. To breathe through your diaphragm, inhale as deep as possible while pushing your stomach out as far as possible in a stable posture. Then exhale and pull back in your stomach. Make sure your shoulders don't move.The muscles used when breathing must remain strong but not stiff when singing. The muscles in the chest, shoulders and face must remain limp.",titleInfo: "Diafragma Info", audio: "diafragma"),
+        ListAudioModel(item: "Throat Exercise", detailInfo: "This technic is for reducing vocal strain. Vocal strain occurs when muscles outside the intrinsic vocal folds or “true vocal cords” get involved in your singing.",titleInfo: "Throat Exercise Info", audio: "Throatexercise")
     ]
     
     override func viewDidLoad() {
@@ -55,6 +55,11 @@ extension BreathingViewController : UITableViewDelegate, UITableViewDataSource{
             var index = indexPath
             self.playAudio(audio: items.audio, playBtn: cell2.playBtn)
             
+        }
+//        cell2.infoAudioBtn.addTarget(self, action: #selector(showInfoAudio), for: .touchUpInside)
+        
+        cell2.onInfoButtonClick = {
+            self.showInfoAudio(titleInfo: items.titleInfo, contentInfo: items.detailInfo, sender: cell2.infoAudioBtn)
         }
         
         
@@ -100,5 +105,22 @@ extension BreathingViewController : UITableViewDelegate, UITableViewDataSource{
 
     }
     
+    func showInfoAudio(titleInfo: String, contentInfo: String, sender: UIButton!) {
+        let slideInfo = OverlayView()
+        slideInfo.contentTitle = titleInfo
+        slideInfo.contentMessage = contentInfo
+        
+        slideInfo.modalPresentationStyle = .custom
+        slideInfo.transitioningDelegate = self
+        self.present(slideInfo, animated: true, completion: nil)
+
+    }
     
+    
+}
+
+extension BreathingViewController : UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        PresentationController(presentedViewController: presented, presenting: presenting)
+    }
 }

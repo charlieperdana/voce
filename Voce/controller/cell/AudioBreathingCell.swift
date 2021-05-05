@@ -20,6 +20,8 @@ class AudioBreathingCell: UITableViewCell{
     
     var onButtonClick: (() -> ())?
     
+    var onInfoButtonClick: (() -> ())?
+    
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -47,4 +49,29 @@ class AudioBreathingCell: UITableViewCell{
             unwrapeedButtonClick()
         }
     }
+    
+    @IBAction func inforPressBreath(_ sender: UIButton){
+        if let unwrapeedButtonClick = onInfoButtonClick {
+            unwrapeedButtonClick()
+        }
+    }
+    
+    @IBAction func inforPressWarmup(_ sender: UIButton){
+        if let unwrapeedButtonClick = onInfoButtonClick {
+            unwrapeedButtonClick()
+        }
+    }
+    
+    @IBAction func inforPressRecovery(_ sender: UIButton){
+        if let unwrapeedButtonClick = onInfoButtonClick {
+            unwrapeedButtonClick()
+        }
+    }
+    
+    @IBAction func inforPressCoolDown(_ sender: UIButton){
+        if let unwrapeedButtonClick = onInfoButtonClick {
+            unwrapeedButtonClick()
+        }
+    }
+        
 }

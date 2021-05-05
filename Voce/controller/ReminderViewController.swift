@@ -105,6 +105,21 @@ class ReminderViewController: UIViewController {
         
     }
     
+    @IBAction func infoDidPressed(_ sender: UIButton) {
+        showInfoReminderHalfModal(sender: sender)
+    }
+    
+    func showInfoReminderHalfModal(sender: UIButton!) {
+        let slideInfo = OverlayView()
+        slideInfo.contentTitle = "Reminder Info"
+        slideInfo.contentMessage = "This feature helps you to set your alert for reminding you about doing your vocalizing before your performances. You don't need to be panic, you just set your time, be ready and doing your vocalizing. We will send your alert notif to remind you aboout your vocalizing base on your time setted"
+        
+        slideInfo.modalPresentationStyle = .custom
+        slideInfo.transitioningDelegate = self
+        self.present(slideInfo, animated: true, completion: nil)
+
+    }
+    
 }
 
 
@@ -140,6 +155,13 @@ extension ReminderViewController: UNUserNotificationCenterDelegate{
         
                 
         window?.rootViewController = startController
+    }
+}
+
+extension ReminderViewController : UIViewControllerTransitioningDelegate {
+    
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        PresentationController(presentedViewController: presented, presenting: presenting)
     }
 }
 
