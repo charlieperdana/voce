@@ -34,6 +34,18 @@ class ReminderViewController: UIViewController {
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
             
         }
+        
+        btnReminderDisplay()
+    }
+    
+    func btnReminderDisplay()  {
+        reminderBtn.layer.cornerRadius = 15
+        reminderBtn.layer.borderWidth = 2
+        reminderBtn.layer.borderColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+        
+        inputDate.layer.cornerRadius = 20
+        inputDate.layer.borderWidth = 2
+        inputDate.layer.borderColor = #colorLiteral(red: 0.3843137255, green: 0.8745098039, blue: 0.8980392157, alpha: 1)
     }
     
     func setPicker()  {

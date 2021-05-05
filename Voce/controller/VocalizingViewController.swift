@@ -24,7 +24,15 @@ class VocalizingViewController: UIViewController {
         startSimulationBtn.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
         
         setupMenuAction()
+        
+        btnSimulationDisplay()
 
+    }
+    
+    func btnSimulationDisplay()  {
+        startSimulationBtn.layer.cornerRadius = 15
+        startSimulationBtn.layer.borderWidth = 2
+        startSimulationBtn.layer.borderColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
     }
     
     func setupMenuAction() {
