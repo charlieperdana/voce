@@ -1,5 +1,5 @@
 # voce
 
-<img src="https://ibb.co/QYcKt6y" width="300" alt="voce">
+<img src="https://i.postimg.cc/CKvV9PkF/voce-icon.png" width="300" alt="voce">
 
 Voce for Your Vocalizing Guidance on your hands
