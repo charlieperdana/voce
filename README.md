@@ -4,4 +4,4 @@
 
 Voce for Your Vocalizing Guidance on your hands
 
-<img src="https://i.ibb.co/vxSY17v/Voce-Mockup.png" alt="Voce-Mockup" border="0" />
+![finalMockup](https://github.com/user-attachments/assets/34987845-84f1-458f-842c-3f0b51dea681)
